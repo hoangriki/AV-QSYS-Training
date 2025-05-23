@@ -1,14 +1,82 @@
-# AV Q-SYS Automation Lab
+AV-QSYS-Training/
+├── README.md
+└── QSYS-Level-0/
+    └── level-0-notes.md 
 
-This repository tracks my journey from AV systems fundamentals to advanced Q-SYS programming and automation, with the ultimate goal of transitioning into platform engineering and integrating DevOps practices into AV.
 
-## Roadmap
-- ✅ Q-SYS Level 0
-- 🔄 Q-SYS Level 1
-- ⏳ Lua scripting for AV automation
-- ⏳ Real-world AV control projects
+ a. Introduction
 
-## Tools
-- Q-SYS Designer
-- Lua
-- GitHub for documentation and versioning
+    Q-SYS is a software-based audio, video, and control ecosystem.
+
+    Built on standard IT protocols, allowing flexible AV system design.
+
+    Used in conference rooms, classrooms, auditoriums, etc.
+ b. Q-SYS Overview
+
+    Unified platform with centralized control via Q-SYS Designer Software (QDS).
+
+    Works across audio, video, and control domains.
+
+    Key components:
+
+        Core Processor: the DSP “brain” of the system
+
+        I/O peripherals: mic/line inputs, outputs, control interfaces
+
+        User Control Interfaces (UCIs): touch panels or browser-based controls
+
+ c. Basic Signal Path
+
+    Signal Flow: Source → Input → Processing → Output
+
+    Each element has customizable routing blocks in Q-SYS Designer.
+
+    Gain staging and signal integrity are key for quality.
+
+ d & e. Q-SYS Products: Parts 1 & 2
+
+    Core Series: 110f, Nano, 510i — varying processing power and I/O
+
+    Peripherals:
+
+        Network I/O: NL Series, I/O-USB, I/O-8 Flex
+
+        Amplifiers: CX-Q, MP-A Series
+
+        Loudspeakers: AcousticDesign™, AD-P ceiling speakers
+
+ f. System Topologies
+
+    Star topology: All devices connect to a network switch.
+
+    Daisy-chain topology: Some devices support chaining (e.g., amplifiers).
+
+    Proper network design is critical — gigabit switches, QoS for AV traffic.
+
+g. Software Basics
+
+    Q-SYS Designer Software (QDS) is used to:
+
+        Build signal chains
+
+        Program controls
+
+        Simulate system designs
+
+    Modular design: drag-and-drop DSP blocks, logic, and UI tools.
+
+ h. Connecting to the Core
+
+    Systems are deployed over Ethernet via Layer 2/3 networks.
+
+    Each device must be discoverable and configured on the same subnet.
+
+    Design files are uploaded to the Core for real-time operation.
+
+ i. Q-SYS Integrated Control Engine
+
+    Built-in Lua scripting for custom automation logic.
+
+    Logic blocks + scripting = control of 3rd-party devices (projectors, lights, etc.).
+
+    Custom User Interfaces (UCIs) can be created and deployed to touch panels.
